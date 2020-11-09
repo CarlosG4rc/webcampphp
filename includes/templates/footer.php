@@ -37,6 +37,8 @@
         <script src="JS/jquery.countdown.min.js"></script>
         <script src="JS/jquery.lettering.js"></script>
 
+        <script src="JS/jquery.colorbox-min.js"></script>
+
         
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <!--script>

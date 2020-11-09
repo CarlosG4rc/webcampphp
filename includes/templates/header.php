@@ -15,13 +15,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integraty="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4ZBNTSRyMA2Fd33n5dQBlWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/colorbox.css">
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="css/main.css">
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/colorbox.css">
 </head>
-<body class="index">
+<?php
+        $archivo = basename($_SERVER['PHP_SELF']);
+        $pagina = str_replace(".php", "" ,$archivo);
+?>
+<body class="<?php echo $pagina; ?>">
     
     
     <!--[if lt IE 8]>
@@ -63,8 +69,9 @@
             <nav class="navegacion-principal clearfix">
                 <a href="conferencia.php">Conferencia</a>
                 <a href="calendario.php">Calendario</a>
-                <a href="#">Invitados</a>
+                <a href="invitados.php">Invitados</a>
                 <a href="registro.php">Reservaciones</a>
             </nav>
         </div><!--contenedor-->
     </div><!--cierre de la barra-->
+</body>

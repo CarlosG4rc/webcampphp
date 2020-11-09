@@ -69,47 +69,7 @@
             </div><!--contenedor-->
         </div><!--contenido del programaa-->
     </section><!--programa-->
-    <section class="invitados contenedor seccion">
-        <h2>Nuestros Invitados</h2>
-        <ul class="lista-invitados clearfix">
-            <li>
-                <div class="invitado">
-                    <img src="img/invitados/invitado1.jpg" alt="invitado1">
-                    <p>Rafael Bautista</p>
-                </div>
-            </li>
-            <li>
-                <div class="invitado">
-                    <img src="img/invitados/invitado2.jpg" alt="invitado1">
-                    <p>Shari Herrera</p>
-                </div>
-            </li>
-            <li>
-                <div class="invitado">
-                    <img src="img/invitados/invitado3.jpg" alt="invitado1">
-                    <p>Gregorio Sánchez</p>
-                </div>
-            </li>
-            <li>
-                <div class="invitado">
-                    <img src="img/invitados/invitado4.jpg" alt="invitado1">
-                    <p>Susana Rivera</p>
-                </div>
-            </li>
-            <li>
-                <div class="invitado">
-                    <img src="img/invitados/invitado5.jpg" alt="invitado1">
-                    <p>Harold García</p>
-                </div>
-            </li>
-            <li>
-                <div class="invitado">
-                    <img src="img/invitados/invitado6.jpg" alt="invitado1">
-                    <p>Susan Sanchez</p>
-                </div>
-            </li>
-        </ul>
-    </section>
+    <?php include_once 'includes/templates/invitados.php';?>
     <div class="contador paralax">
         <div class="contenedor">
             <ul class="resumen-evento clearfix">

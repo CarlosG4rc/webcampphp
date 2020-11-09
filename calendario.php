@@ -7,7 +7,7 @@
                 require_once('includes/funciones/bd_conexion.php');
                 $sql = "SELECT evento_id, nombre_evento, fecha_evento, hora_evento, cat_evento, icono, nombre_invitado, apellido_invitado ";
                 $sql .= "FROM eventos ";
-                //Unir tabals de sql
+                //Unir tablas de sql
                 $sql .= "INNER JOIN categoria_evento ";
                 $sql .= "ON eventos.id_cat_evento = categoria_evento.id_categoria ";
                 $sql .= "INNER JOIN invitados ";
@@ -51,7 +51,7 @@
                             echo  ucwords(strftime( "%A, %d de %B del %Y", strtotime($dia) )); ?>
                     </h3>
                     <?php foreach($lista_eventos as $evento) {?>
-                        <div class="dia">
+                        <div class="day">
                             <p class="titulo"><?php echo $evento['titulo']; ?> </p>
                             <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i>
                                 <?php echo $evento['fecha'] . " " . $evento['hora']; ?> 
